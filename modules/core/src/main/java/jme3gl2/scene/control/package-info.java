@@ -1,4 +1,4 @@
-/* Copyright (c) 2009-2023 jMonkeyEngine.
+/* Copyright (c) 2009-2024 jMonkeyEngine.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -31,21 +31,26 @@
  */
 
 /**
- * Paquete encargado de proprocionar controles para las animaciones 2D(Sprites).
- * 
- * <div>
+ * Package responsible for managing animation control for 2D models, this package 
+ * offers 3 animated controls that can be used to meet the demands of a full 2D game.
+ * <p>
+ * List of currently supported animated controls:
  * <ul>
- * <li>
- *  <b>AnimatedSprite:</b> Control de animaciones individuales.
+ * <li><b>AnimatedSprite2D</b>: Animated control where you can generate an animation 
+ * through various textures.
  * </li>
- * <li>
- *  <b>IndexAnimatedSprite:</b> Contro para un mapa de animaciones.
+ * <li><b>AnimatedSingleSprite2D</b>: Animated control responsible for generating 
+ * an animation by going through the list of images that contain the texture.
+ * </li>
+ * <li><b>AnimatedRibbonBoxSprite2D</b>:A composite animated control, this control 
+ * combines <b>AnimatedSprite2D</b> with <b>AnimatedSingleSprite2D</b> generating 
+ * complex animations that require multiple textures, each of which provides 
+ * an animation.
  * </li>
  * </ul>
- * </div>
  * 
  * @author wil
- * @version 1.0-SNAPSHOT
+ * @version 2.0.0
  * @since 1.5.0
  */
 package jme3gl2.scene.control;
